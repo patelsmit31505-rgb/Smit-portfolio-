@@ -189,11 +189,34 @@ footer{
     </div>
 </section>
 
-<a href="https://wa.me/919999999999" class="whatsapp">💬</a>
+<a href="https://wa.me/919054431505" class="whatsapp">💬</a>
 
 <footer>
     © 2026 Smit Patel | All Rights Reserved
 </footer>
+<script>
+const texts = ["Web Developer", "Creative Designer", "Freelancer"];
+let count = 0;
+let index = 0;
+let currentText = "";
+let letter = "";
 
+(function type(){
+    if(count === texts.length){
+        count = 0;
+    }
+    currentText = texts[count];
+    letter = currentText.slice(0, ++index);
+
+    document.querySelector(".typing").textContent = letter;
+    if(letter.length === currentText.length){
+        setTimeout(() => {
+            index = 0;
+            count++;
+        }, 1500);
+    }
+    setTimeout(type, 100);
+})();
+</script>
 </body>
 </html>
