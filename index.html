@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smit Patel | Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    scroll-behavior:smooth;
+}
+body{
+    background:linear-gradient(135deg,#000,#1a1a1a,#2c003e);
+    color:white;
+}
+
+/* Navbar */
+nav{
+    position:fixed;
+    width:100%;
+    top:0;
+    background:rgba(0,0,0,0.8);
+    padding:15px 50px;
+    display:flex;
+    justify-content:space-between;
+    z-index:1000;
+}
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    transition:0.3s;
+}
+nav a:hover{
+    color:#ff00cc;
+}
+
+/* Header */
+header{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+header h1{
+    font-size:55px;
+    animation:fadeDown 1.5s ease;
+}
+header p{
+    margin:10px 0;
+    font-size:22px;
+    color:#bbb;
+    animation:fadeUp 2s ease;
+}
+.btn{
+    margin-top:20px;
+    padding:12px 30px;
+    background:#ff00cc;
+    border-radius:30px;
+    text-decoration:none;
+    color:white;
+    transition:0.4s;
+}
+.btn:hover{
+    background:white;
+    color:black;
+    transform:scale(1.1);
+}
+
+/* Sections */
+section{
+    padding:100px 20px;
+    text-align:center;
+}
+.projects{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+.card{
+    background:rgba(255,255,255,0.1);
+    backdrop-filter:blur(10px);
+    margin:20px;
+    padding:30px;
+    width:280px;
+    border-radius:15px;
+    transition:0.5s;
+}
+.card:hover{
+    transform:translateY(-10px);
+    background:rgba(255,255,255,0.2);
+}
+
+/* Social */
+.social a{
+    margin:0 10px;
+    font-size:25px;
+    color:white;
+    transition:0.3s;
+}
+.social a:hover{
+    color:#ff00cc;
+}
+
+/* WhatsApp Button */
+.whatsapp{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#25D366;
+    color:white;
+    padding:15px;
+    border-radius:50%;
+    font-size:22px;
+    text-decoration:none;
+}
+
+/* Animations */
+@keyframes fadeDown{
+    from{opacity:0; transform:translateY(-40px);}
+    to{opacity:1; transform:translateY(0);}
+}
+@keyframes fadeUp{
+    from{opacity:0; transform:translateY(40px);}
+    to{opacity:1; transform:translateY(0);}
+}
+
+footer{
+    padding:20px;
+    background:black;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <h2>Smit</h2>
+    <div>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+<header>
+    <h1>Smit Patel</h1>
+    <p>Web Developer | Creative Designer</p>
+    <a href="#projects" class="btn">View My Work</a>
+</header>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>I create modern websites and creative branding designs.</p>
+</section>
+
+<section id="projects">
+    <h2>My Projects</h2>
+    <div class="projects">
+        <div class="card">
+            <h3>Temple Website</h3>
+            <p>Religious community website with modern UI.</p>
+        </div>
+        <div class="card">
+            <h3>Gujarati Poster App</h3>
+            <p>Online poster creation web application.</p>
+        </div>
+        <div class="card">
+            <h3>Logo Design</h3>
+            <p>Professional branding and logo projects.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Me</h2>
+    <div class="social">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+    </div>
+</section>
+
+<a href="https://wa.me/919999999999" class="whatsapp">💬</a>
+
+<footer>
+    © 2026 Smit Patel | All Rights Reserved
+</footer>
+
+</body>
+</html>
